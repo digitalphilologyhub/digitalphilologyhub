@@ -473,7 +473,7 @@ section {
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
   .logo-container img {
-    max-width: 70px;
+    max-width: 80px;
     max-height: 50px;
   }
   .header {
@@ -481,7 +481,7 @@ section {
   }
   .navbar {
     position: fixed;
-    top: 0;
+    top: 50px;
     right: -100%;
     width: 100%;
     max-width: 400px;
@@ -577,7 +577,7 @@ section {
     transition: 0.5s;
     position: fixed;
     right: 20px;
-    top: 20px;
+    top: 100px;
     z-index: 9999;
   }
 
@@ -1928,6 +1928,11 @@ section {
 .footer .footer-contact p {
   line-height: 26px;
 }
+
+.footer .footer-contact a {
+  color: white;
+}
+
 
 .footer .copyright {
   text-align: center;
