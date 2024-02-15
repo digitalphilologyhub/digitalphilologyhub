@@ -277,6 +277,43 @@ section {
     transition-delay: 0 !important;
   }
 }
+/* Barra Loghi */
+.logo-bar {
+  /* Altre regole CSS */
+  justify-content: space-between; /* Per spingere i loghi e il selettore lingua al centro */
+}
+
+.logo-container {
+  /* Altre regole CSS */
+  margin: 40px auto; /* Per centrare i loghi */
+}
+
+.language-selector {
+  /* Altre regole CSS */
+  margin-right: 40px; /* Per centrare il selettore lingua */
+}
+
+/* Regole CSS per schermi cellulari */
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    margin: 20px auto; /* Riduci il margine superiore/inferiore per schermi cellulari */
+  }
+
+  .language-selector {
+    margin-right: 20px; /* Riduci il margine destro per schermi cellulari */
+  }
+}
+
+/* Regole CSS per iPad */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .logo-container {
+    margin: 30px auto; /* Riduci il margine superiore/inferiore per iPad */
+  }
+
+  .language-selector {
+    margin-right: 30px; /* Riduci il margine destro per iPad */
+  }
+}
 
 /* Barra Loghi */
 .logo-bar {
@@ -292,13 +329,36 @@ section {
   z-index: 998;
   border-bottom: 1px solid #ccc;
 }
-
 .logo-container {
   margin: 40px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .logo-container img {
   max-height: 50px;
+}
+/* Selettore lingua */ 
+
+.language-selector {
+  background-color: #001973;
+  display: flex;
+  justify-content: flex-end;
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.language-selector select {
+  color: white;
+  background-color: #001973;
+}
+
+.language-selector select option {
+  color: #001973;
+}
+
+.language-selector select option[selected] {
+  color: white;
 }
 
 /*--------------------------------------------------------------
