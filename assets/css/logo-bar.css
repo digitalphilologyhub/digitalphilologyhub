@@ -1,0 +1,108 @@
+/* Stile di default per i loghi */
+.logo-bar {
+  display: flex;
+  justify-content: left; /* Per allineare i loghi al centro orizzontalmente */
+  background-color: #326AAD;
+}
+
+.logo-container img {
+  max-width: 40rem;
+  max-height: 10rem; 
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content .logo-bar {
+  align-items: center;
+}
+
+.logo-container {
+  margin: 0 3rem 0 0; /* Spazio tra i loghi */
+}
+
+/* Regole per ridimensionare i loghi su schermi di dimensioni diverse */
+@media only screen and (min-width: 768px) {
+  .logo-container img {
+    max-width: 40rem;
+    max-height: 10rem;
+  }
+  .logo-container {
+    margin: 0 6rem 0 0; /* Spazio tra i loghi */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo-container img {
+    max-width: 40rem;
+    max-height: 10rem;
+  }
+  .it-header-slim-wrapper .it-header-slim-wrapper-content .logo-bar {
+    align-items: center;
+  }
+  .logo-container {
+    margin: 0 6rem 0 0; /* Spazio tra i loghi */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo-container img {
+    max-width: 40rem;
+    max-height: 10rem;
+  }
+  .logo-container {
+    margin: 1rem 6rem 0 0; /* Spazio tra i loghi */
+  }
+}
+
+/* Regole CSS per schermi cellulari */
+@media only screen and (max-width: 600px) {
+  .logo-container img {
+    max-width: 260px;
+    max-height: 40px;
+  }
+  .logo-container {
+    margin: 0 1rem 0 0; /* Spazio tra i loghi */
+  }
+
+  .it-header-slim-right-zone {
+    flex-wrap: wrap; /* Manda a capo gli elementi all'interno di .it-header-slim-right-zone */
+  }
+
+  .it-header-slim-right-zone .dropdown-menu {
+    margin-top: 0.5rem; /* Aggiungi spazio tra il selettore per la lingua e i loghi */
+    width: 100%; /* Imposta la larghezza completa per il menu a discesa */
+    text-align: center; /* Centra gli elementi all'interno del menu a discesa */
+  }
+}
+
+.cloned-element {
+  display: none;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content a.it-opener {
+  padding: 0 !important;
+  color: white; /* Imposta il colore del testo dell'icona a bianco */
+}
+
+section#head-section {
+  /*background: url("../images/header1.svg") no-repeat;*/
+  background-color: #326AAD;
+  background-size: cover;
+}
+
+section .container .row div#head-desc .card.mb-5,
+div#head-desc a {
+  background-color: #326AAD;
+  color: white;
+}
+
+.it-header-slim-wrapper.theme-light {
+  background-color: #326AAD !important;
+  
+  height: 4rem;
+}
+
+.it-header-slim-wrapper.theme-light .nav-link.dropdown-toggle{
+  color: white !important;
+}
+.it-header-slim-wrapper {
+  padding: 2.5px 2px !important;
+}
